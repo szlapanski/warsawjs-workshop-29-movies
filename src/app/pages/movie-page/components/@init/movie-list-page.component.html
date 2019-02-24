@@ -1,0 +1,3 @@
+<ul *ngIf="movieList">
+  <li *ngFor="let movie of movieList"><a [routerLink]="['/movies/', movie.id]">{{movie.title}}</a></li>
+</ul>
